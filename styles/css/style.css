@@ -58,6 +58,7 @@ html, body {
   background: #ffffff;
   position: relative;
   z-index: 5;
+  overflow-x: hidden;
 }
 
 a {
@@ -65,7 +66,14 @@ a {
 }
 
 .section1 {
-  width: 470px;
+  width: 40%;
+  margin-top: 147px;
+}
+@media screen and (max-width: 968px) {
+  .section1 {
+    margin-top: 80px;
+    width: 100%;
+  }
 }
 .section1__title {
   margin-bottom: 40px;
@@ -76,11 +84,13 @@ a {
 }
 .section1__img {
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 773px;
-  height: 763px;
-  background: paleturquoise;
+  right: -300px;
+  top: -400px;
+  width: 1030px;
+}
+.section1__img img {
+  width: 100%;
+  border-radius: 100%;
 }
 .section1__text {
   font-size: 18px;
@@ -92,10 +102,24 @@ a {
 }
 .section1__btnGoogle {
   margin: 72px 0 300px;
+  border: none;
+  background: none;
+}
+@media screen and (max-width: 968px) {
+  .section1__btnGoogle {
+    margin-bottom: 150px;
+  }
 }
 
 .section2 {
+  display: flex;
+  flex-direction: column;
   margin-block-end: 125px;
+}
+@media screen and (max-width: 968px) {
+  .section2 {
+    align-items: center;
+  }
 }
 .section2__title {
   margin-bottom: 16px;
@@ -115,6 +139,13 @@ a {
   width: 30%;
   z-index: 5;
 }
+@media screen and (max-width: 968px) {
+  .section2__info1 {
+    margin: 0;
+    margin-bottom: 150px;
+    width: 50%;
+  }
+}
 .section2__info1--number {
   position: absolute;
   top: -80px;
@@ -130,6 +161,13 @@ a {
   margin: 0 auto;
   z-index: 5;
 }
+@media screen and (max-width: 968px) {
+  .section2__info2 {
+    margin: 0;
+    margin-bottom: 150px;
+    width: 50%;
+  }
+}
 .section2__info2--number {
   position: absolute;
   top: -80px;
@@ -139,11 +177,23 @@ a {
   font-weight: 900;
   z-index: -1;
 }
+@media screen and (max-width: 968px) {
+  .section2__info2--number {
+    top: -100px;
+    margin-bottom: 50px;
+  }
+}
 .section2__info3 {
   position: relative;
   width: 30%;
   margin: 0 0 0 auto;
   z-index: 5;
+}
+@media screen and (max-width: 968px) {
+  .section2__info3 {
+    width: 50%;
+    margin: 0;
+  }
 }
 .section2__info3--number {
   position: absolute;
@@ -153,6 +203,11 @@ a {
   color: #f5f5f5;
   font-weight: 900;
   z-index: -1;
+}
+@media screen and (max-width: 968px) {
+  .section2__info3--number {
+    top: -100px;
+  }
 }
 
 .section3 {
@@ -173,13 +228,15 @@ a {
 }
 .section3__img {
   position: absolute;
-  left: 0;
-  width: 435px;
-  height: 1140px;
-  background: purple;
-  border-top-right-radius: 100%;
-  border-bottom-right-radius: 100%;
+  left: -580px;
   z-index: -1;
+  width: 1140px;
+  height: 1140px;
+}
+.section3__img img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
 }
 .section3__title2 {
   margin-bottom: 8px;
@@ -199,6 +256,7 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
+  background: #ffffff;
   -webkit-box-shadow: 2px 0px 60px 0px rgba(20, 0, 0, 0.2);
   -moz-box-shadow: 2px 0px 60px 0px rgba(20, 0, 0, 0.2);
   box-shadow: 2px 0px 60px 0px rgba(20, 0, 0, 0.2);
@@ -208,8 +266,12 @@ a {
 .section3__wrap--img {
   width: 88px;
   height: 88px;
+}
+.section3__wrap--img img {
+  width: 88px;
+  height: 88px;
   border-radius: 100%;
-  background: violet;
+  width: 100%;
 }
 .section3__wrap--text {
   width: 600px;
@@ -239,10 +301,14 @@ a {
 
 header {
   width: 100%;
-  margin-bottom: 147px;
 }
 header nav {
   width: 40%;
+}
+@media screen and (max-width: 968px) {
+  header nav {
+    width: 80%;
+  }
 }
 
 ul {
@@ -265,7 +331,6 @@ ul {
   width: 28px;
   height: 28px;
   margin-right: 20px;
-  background: #373737;
 }
 .footer__wrap--text {
   margin-right: 20px;

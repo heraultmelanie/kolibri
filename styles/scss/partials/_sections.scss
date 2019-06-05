@@ -1,5 +1,10 @@
 .section1 {
-    width: 470px;
+    width: 40%;
+    margin-top: 147px;
+    @media screen and (max-width: 968px) {
+        margin-top: 80px;
+        width: 100%;
+    }
     &__info {
 
     }
@@ -12,11 +17,13 @@
     }
     &__img {
         position: absolute;
-        right: 0;
-        top: 0;
-        width: 773px;
-        height: 763px;
-        background: paleturquoise;
+        right: -300px;
+        top: -400px;
+        width: 1030px;
+        img {
+            width: 100%;
+            border-radius: 100%;
+        }
     }
     &__text {
         font-size: 18px;
@@ -28,11 +35,25 @@
     }
     &__btnGoogle {
         margin: 72px 0 300px;
+        border: none;
+        background: none;
+        @media screen and (max-width: 968px) {
+            margin-bottom: 150px;
+        }
     }
 }
 
+
+
+
+
 .section2 {
+    display: flex;
+    flex-direction: column;
     margin-block-end: 125px;
+    @media screen and (max-width: 968px) {
+        align-items: center;
+    }
     &__title {
         margin-bottom: 16px;
         font-size: 32px;
@@ -50,6 +71,11 @@
         position: relative;
         width: 30%;
         z-index: 5;
+        @media screen and (max-width: 968px) {
+            margin: 0;
+            margin-bottom: 150px;
+            width: 50%;
+        }
         &--number {
             position:  absolute;
             top: -80px;
@@ -65,6 +91,11 @@
         width: 30%;
         margin: 0 auto;
         z-index: 5;
+        @media screen and (max-width: 968px) {
+            margin: 0;
+            margin-bottom: 150px;
+            width: 50%;
+        }
         &--number {
             position:  absolute;
             top: -80px;
@@ -73,6 +104,10 @@
             color: $greylight;
             font-weight: 900;
             z-index: -1;
+            @media screen and (max-width: 968px) {
+                top: -100px;
+                margin-bottom: 50px;
+            }
         }
     }
     &__info3 {
@@ -80,6 +115,10 @@
         width: 30%;
         margin: 0 0 0 auto;
         z-index: 5;
+        @media screen and (max-width: 968px) {
+            width: 50%;
+            margin: 0;
+        }
         &--number {
             position:  absolute;
             top: -80px;
@@ -88,6 +127,9 @@
             color: $greylight;
             font-weight: 900;
             z-index: -1;
+            @media screen and (max-width: 968px) {
+                top: -100px;
+            }
         }
     }
 }
@@ -109,13 +151,15 @@
     }
     &__img {
         position: absolute;
-        left: 0;
-        width: 435px;
-        height: 1140px;
-        background: purple;
-        border-top-right-radius: 100%;
-        border-bottom-right-radius: 100%;
+        left: -580px;
         z-index: -1;
+        width: 1140px;
+        height: 1140px;
+        img {
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+        }
     }
     &__title2 {
         margin-bottom: 8px;
@@ -135,6 +179,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 32px;
+        background: $white;
         -webkit-box-shadow: 2px 0px 60px 0px rgba(20,0,0,0.2);
         -moz-box-shadow: 2px 0px 60px 0px rgba(20,0,0,0.2);
         box-shadow: 2px 0px 60px 0px rgba(20,0,0,0.2);
@@ -143,8 +188,12 @@
         &--img {
             width: 88px;
             height: 88px;
-            border-radius: 100%;
-            background: violet;
+            img {
+                width: 88px;
+                height: 88px;
+                border-radius: 100%;
+                width: 100%;
+            }
         }
         &--text {
             width: 600px;
