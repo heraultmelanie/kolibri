@@ -1,12 +1,19 @@
 .section1 {
     width: 40%;
     margin-top: 147px;
+    @media screen and (max-width:1185px) {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 147px;
+    }
     @media screen and (max-width: 968px) {
         margin-top: 80px;
         width: 100%;
     }
     &__info {
-
+        @media screen and (max-width:1185px) {
+            
+        }
     }
     &__title {
         margin-bottom: 40px;
@@ -17,9 +24,12 @@
     }
     &__img {
         position: absolute;
-        right: -300px;
-        top: -400px;
-        width: 1030px;
+        right: -170px;
+        top: -100px;
+        width: 882px;
+        @media screen and (max-width:1185px) {
+            display: none;
+        }
         img {
             width: 100%;
             border-radius: 100%;
@@ -37,8 +47,8 @@
         margin: 72px 0 300px;
         border: none;
         background: none;
-        @media screen and (max-width: 968px) {
-            margin-bottom: 150px;
+        @media screen and (max-width:1185px) {
+            margin-bottom: 80px;
         }
     }
 }
@@ -50,7 +60,10 @@
 .section2 {
     display: flex;
     flex-direction: column;
-    margin-block-end: 125px;
+    margin-bottom: 125px;
+    @media screen and (max-width:1185px) {
+        margin-bottom: 150px;
+    }
     @media screen and (max-width: 968px) {
         align-items: center;
     }
@@ -76,6 +89,11 @@
             margin-bottom: 150px;
             width: 50%;
         }
+        @media screen and (max-width: 600px) {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 150px;
+        }
         &--number {
             position:  absolute;
             top: -80px;
@@ -95,6 +113,11 @@
             margin: 0;
             margin-bottom: 150px;
             width: 50%;
+        }
+        @media screen and (max-width: 600px) {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 150px;
         }
         &--number {
             position:  absolute;
@@ -118,6 +141,11 @@
         @media screen and (max-width: 968px) {
             width: 50%;
             margin: 0;
+        }
+        @media screen and (max-width: 600px) {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 150px;
         }
         &--number {
             position:  absolute;
@@ -185,14 +213,19 @@
         box-shadow: 2px 0px 60px 0px rgba(20,0,0,0.2);
         border-radius: 100px;
         padding: 40px;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
         &--img {
+            min-width: 88px;
+            min-height: 88px;
             width: 88px;
             height: 88px;
             img {
-                width: 88px;
-                height: 88px;
-                border-radius: 100%;
+                height: 100%;
                 width: 100%;
+                object-fit: cover;
+                border-radius: 100%;
             }
         }
         &--text {
@@ -206,10 +239,13 @@
 .section4 {
     margin: 0 305px;
     text-align: center;
+    @media screen and (max-width: 1320px) {
+        margin: 0 10%;
+    }
     &__title {
         margin-bottom: 48px;
         font-size: 40px;
-        line-height: 32px;
+        line-height: 42px;
         color: $black;
         font-weight: 700;
     }
