@@ -1,2 +1,1 @@
-# Pealth-UX-project
-Project UX - HETIC 
+# Kolibri project
